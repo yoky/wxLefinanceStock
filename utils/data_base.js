@@ -1,0 +1,65 @@
+var stock_market=[
+  {
+    symbol: "SH000001",
+    ric: null,
+    seType: "701",
+    stockName: "上证指数",
+    price: 3288.6855,
+    priceChange: -3.95,
+    priceChangeRadio: -0.0012,
+    image: null,
+    amount: "10365936.25259万",
+    exchange: "001002",
+    upCount: 292,
+    downCount: 1029,
+    flatCount: 40,
+    totalCount: 1361,
+    time: "1501641515000",
+    date: "2017-08-02 10:38:35",
+    open: 3288.5183,
+    lastClose: 3292.6383
+  },
+  {
+    symbol: "SZ399001",
+    ric: null,
+    seType: "701",
+    stockName: "深证成指",
+    price: 10469.337,
+    priceChange: -56.00,
+    priceChangeRadio: -0.00532,
+    image: null,
+    amount: "30519028.8226114万",
+    exchange: "001003",
+    upCount: 359,
+    downCount: 1620,
+    flatCount: 21,
+    totalCount: 2000,
+    time: "1501659036000",
+    date: "2017-08-02 15:30:36",
+    open: 10525.995,
+    lastClose: 10525.346
+  },
+  {
+    symbol: "SZ399006",
+    ric: null,
+    seType: "701",
+    stockName: "创业板指",
+    price: 1724.833,
+    priceChange: -16.24,
+    priceChangeRadio: -0.00932,
+    image: null,
+    amount: "2401981.723283万",
+    exchange: "001003",
+    upCount: 97,
+    downCount: 567,
+    flatCount: 2,
+    totalCount: 666,
+    time: "1501659036000",
+    date: "2017-08-02 15:30:36",
+    open: 1740.385,
+    lastClose: 1741.074
+  }
+];
+module.exports = {
+  stock_market: stock_market
+};
