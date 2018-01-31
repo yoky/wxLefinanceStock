@@ -1,0 +1,20 @@
+<import src="../../template/video-item/video-item.wxml" />
+<view class="video-list-wrap">
+  <scroll-view scroll-x="true" class='chanel-list'>
+    <view id="91101008" class='chanel active'>资讯热点</view>
+    <view id='91201008' class='chanel'>财讯原创</view>
+    <view id='91301008' class='chanel'>证券投资</view>
+    <view id='91401008' class='chanel'>商业大咖</view>
+    <view id='91501008' class='chanel'>生活理财</view>
+    <view id="91701008" class='chanel'>评测</view>
+    <view id="91801008" class='chanel'>发布会</view>
+    <view id='91901008' class='chanel'>业界资讯</view>
+    <view id='92001008' class='chanel'>新品速报</view>
+    <view id='91601008' class='chanel'>科技新知</view>
+  </scroll-view>
+  <view class='videos'>
+    <block wx:for="{{videoList}}" wx:key="unique" wx:for-item="video">
+      <template is="video-item" data="{{video}}"></template>
+    </block>
+  </view>
+</view>

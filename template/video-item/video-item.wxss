@@ -1,0 +1,17 @@
+.video-item {
+  width: 100%;
+  height: 530rpx;
+  position: relative;
+}
+
+.video-item .cover-img {
+  height: 460rpx;
+  width: 100%;
+}
+
+.video-item .video-title {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  color: #9e9e9e;
+}

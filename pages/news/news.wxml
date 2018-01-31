@@ -1,0 +1,29 @@
+<import src="../../template/split-line/split-line.wxml" />
+<import src="../../template/news-item/news-item.wxml" />
+<view class="zixun-page">
+  <view class="focus-view">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="focusNews-swiper" bindchange='swiperChange'>
+      <block wx:for="{{focusNews}}" wx:key="unique">
+        <swiper-item class="swiper-item">
+          <navigator url="/pages/new-detail/new-detail?id={{item.id}}">
+            <image src="{{item.imageUrl[169]}}" class="slide-image" width="355" height="150" />
+            <view class="foucus-newsname">{{item.name}}</view>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="swipe-btn-wrapper">
+      <view class="swipe-btn-list">
+        <view wx:for="{{focusNews}}" wx:key="unique" class="{{dotsClass[index]}} swipe-btn"></view>
+      </view>
+    </view>
+  </view>
+  <!-- <template is="split-line"></template> -->
+  <!-- <scroll-view class="news-wrapper">
+</scroll-view> -->
+  <view class="news-wrapper">
+    <block wx:for="{{news}}" wx:key="unique" wx:for-item="new">
+      <template is="news-item" data="{{new}}"></template>
+    </block>
+  </view>
+</view>

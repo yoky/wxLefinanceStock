@@ -1,0 +1,15 @@
+<import src="news-item.wxss" />
+<template name="news-item">
+  <view class="news-item">
+    <view class="keyword-wrapper">
+      <navigator wx:for="{{new.keywords}}" wx:key="*this" class='keyword'>{{item}}
+      </navigator>
+    </view>
+    <navigator class="new-title" url="/pages/new-detail/new-detail?id={{new.id}}">{{new.name}}</navigator>
+    <view class="new-info">
+      <text class='source-name'>{{new.sourceName}}</text>
+      <text>{{new.friendTime}}</text>
+    </view>
+    <image class="zhuan-fa" src='../../common/images/zhuan.png'></image>
+  </view>
+</template>

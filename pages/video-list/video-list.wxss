@@ -1,0 +1,15 @@
+.video-list-wrap .chanel-list{
+  font-size: 28rpx;
+  white-space: nowrap;
+  display: flex;
+  padding: 10rpx 0;
+  border-top: 1px solid #E2E4E7; 
+  border-bottom: 1px solid #E2E4E7; 
+}
+.video-list-wrap .chanel-list .chanel{
+  display: inline-block;
+  padding: 0 10rpx;
+}
+.video-list-wrap .chanel-list .chanel.active{
+  color: #3081E0;
+}

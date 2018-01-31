@@ -1,0 +1,46 @@
+@import "../../template/news-item/news-item.wxss";
+@import "../../template/split-line/split-line.wxss";
+page{
+  background-color: #EDECF3;
+}
+.focus-view{
+  position: relative;
+}
+.focus-view .focusNews-swiper{
+  width: 100%;
+  height: 442rpx;
+}
+
+.focus-view .focusNews-swiper .swiper-item image{
+  width: 100%;
+}
+.focus-view .focusNews-swiper .swiper-item .foucus-newsname{
+  position: absolute;
+  bottom: 40rpx;
+  left: 24rpx;
+  right: 100rpx;
+  font-size: 32rpx;
+  color: white;
+}
+.swipe-btn-wrapper{
+  height: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.swipe-btn-wrapper .swipe-btn-list .swipe-btn{
+  width: 6rpx;
+    height: 6rpx;
+    float: left;
+    background-color: #fff;
+    border-radius: 3rpx;
+    margin: 6rpx;
+}
+.swipe-btn-wrapper .swipe-btn-list .swipe-btn.on{
+  width:10rpx;
+}
+.news-wrapper{
+  padding: 0 16rpx;
+}

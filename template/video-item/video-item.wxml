@@ -1,0 +1,6 @@
+<template name="video-item">
+  <view class='video-item'>
+    <image class='cover-img' src='{{video.image}}'></image>
+    <view class='video-title'>{{video.title}}</view>
+  </view>
+</template>

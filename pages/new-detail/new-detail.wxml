@@ -1,0 +1,11 @@
+<import src="../../html-view/index.wxml" />
+<view class="new-detail-wrap">
+  <view class='new-title'>{{newDetail.title}}</view>
+  <view class='new-source'>
+    <text>{{newDetail.sourceName}}</text>
+    <text class='new-source-date'>{{newDetail.friendTime}}</text>
+  </view>
+  <view class='new-content'>
+  <template is="html-view" data="{{data: newContent}}" />
+  </view>
+</view>

@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<import src="../../template/index-tpl.wxml"/>
+<import src="../../template/index-tpl/index-tpl.wxml"/>
 <view class="container">
     <template is="stock-name" data="{{market}}"></template>  
 </view>

@@ -1,0 +1,19 @@
+@import '../../html-view/index.wxss';
+.new-detail-wrap{
+  padding: 27rpx 32rpx;
+}
+.new-detail-wrap .new-title{
+  font-size: 55rpx;
+  /* margin-bottom: 30rpx; */
+}
+.new-detail-wrap .new-source{
+  color: #9E9E9E;
+  font-size: 24rpx;
+  margin: 11rpx 0;
+}
+.new-detail-wrap .new-source .new-source-date{
+  padding-left: 15rpx;
+}
+.new-detail-wrap .new-content .p{
+  margin: 0;
+}

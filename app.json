@@ -1,12 +1,36 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/news/news",
+    "pages/new-detail/new-detail",
+    "pages/video-list/video-list"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "明天财讯",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "行情",
+        "iconPath": "common/images/index.png",
+        "selectedIconPath": "common/images/indexSelected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "common/images/zixun.png",
+        "selectedIconPath": "common/images/zixunSelected.png"
+      },
+      {
+        "pagePath": "pages/video-list/video-list",
+        "text": "直播",
+        "iconPath": "common/images/zhibo.png",
+        "selectedIconPath": "common/images/zhiboSelected.png"
+      }
+    ]
   }
 }
